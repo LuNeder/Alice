@@ -22,8 +22,7 @@ You can also tell Alice to wait some time between a line and the other.
 
 The first line will be written 10 seconds after you run Alice and tell the time between a line and the other, this way you have time to select the place where you want to input your text.
 
-
-The "Alice" name was just the 1st name I found in Google
+"Alice" was just the 1st name I found on Google lol
 
 ### Dependencies 
 - keyboard (pip install keyboard)
