@@ -13,3 +13,8 @@ The first line will be written 10 seconds after you run Alice and tell the time 
 
 
 The "Alice" name was just the 1st name I found in Google
+
+## Dependencies 
+- keyboard (pip install keyboard)
+- time (pip install time)
+- python 3.9 or newer
