@@ -1,5 +1,5 @@
 # Alice
-Send the contnents of a file in a chat, one line per message
+Send the contnents of a file in a chat, each line on a message
 
 Alice requires an original.txt file on the directory you're running it from.
 
