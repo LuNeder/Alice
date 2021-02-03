@@ -27,7 +27,7 @@ import keyboard
 import time
 
 #Asks how many seconds between lines and saves answer as t
-t = int(input("How many seconds between lines? ->"))
+t = int(input("How many seconds between lines? -> "))
 print(t)
 
 #open file
