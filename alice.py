@@ -13,7 +13,7 @@
 #
 # The Current Maintainer of this work is Lu Neder.
 #
-# This work consists of the files alice.py, README.md and original.txt
+# This work consists of the files alice.py, README.md and the included original.txt example.
 
 
 #Alice requires an original.txt file on the directory you're running it from.
