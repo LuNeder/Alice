@@ -4,9 +4,9 @@ Send the contnents of a file in a chat, each line on a message
 ### Usage
 
 - Download/clone this repository 
-- Open terminal and cd to the directory original.txt is
+- Open terminal and cd to the directory original.txt is (usually the same directory as alice.py is)
 - Type/paste whatever you want in original.txt
-- Run on terminal: "python /PATH/TO/alice.py" (change /PATH/TO/alice.py to the alice.py path)
+- Run on terminal: "python /PATH/TO/alice.py" (change /PATH/TO/alice.py to the alice.py path. If you are already on alice.py's directory and alice.py and original.txt are in the same directory, you can just type ./alice.py instead)
 - Type the number of seconds you want between a line and the next one and press enter
 - Select the text box/input area you want Alice to type in
 - After 10 seconds, alice will start typing
