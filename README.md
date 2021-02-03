@@ -3,6 +3,7 @@ Send the contnents of a file in a chat, each line on a message
 
 ### Usage
 
+- Download/clone this repository 
 - Open terminal and cd to the directory original.txt is
 - Type/paste whatever you want in original.txt
 - Run on terminal: "python /PATH/TO/alice.py" (change /PATH/TO/alice.py to the alice.py path)
