@@ -31,7 +31,7 @@ t = int(input("How many seconds between lines? -> "))
 print(t)
 
 #open file
-original = open("original.txt", "r")
+original = open("original.txt", "r", encoding='utf-8')
 conteudo = original.read()
 
 #divide file lines as list elements and print them
