@@ -27,15 +27,17 @@ import keyboard
 import time
 import sys
 
+#Save command line args as args
 args = str(sys.argv)
 
-#Asks how many seconds between lines and saves answer as t
+#Shows help if args contain --help, gets and prepare the file if args do not contain --help
 if (args.__contains__("--help")):
     mode = "help"
     print("--help: Help mode: show this message")
     print("--loop: Loop mode: start the file again from beginning after it's over")
     print("no args: Normal mode: stop once file ends")
 else:
+    #Asks how many seconds between lines and saves answer as t
     t = int(input("How many seconds between lines? -> "))
     print(t)
 
@@ -55,7 +57,7 @@ else:
     #waits 10 seconds so you can find the text input area once Alice is running
     time.sleep(10)
 
-#types each line and press enter, then waits t seconds before doing it with the next line
+#types each line and press enter, then waits t seconds before doing it with the next line. Keep doing this forever with a While Loop if args contain --loop. If args contain --help it'll just print an empty line
 if (args.__contains__("--loop")):
     mode = "loop"
     while True:
