@@ -34,7 +34,7 @@ args = str(sys.argv)
 if (args.__contains__("--help")):
     mode = "help"
     print("--help: Help mode: show this message")
-    print("--loop: Loop mode: start the file again from beginning after it's over")
+    print("--loop: Loop mode: restart the file from beginning after it's over")
     print("no args: Normal mode: stop once file ends")
 else:
     #Asks how many seconds between lines and saves answer as t
