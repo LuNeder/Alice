@@ -1,0 +1,9 @@
+[package]
+name = "Alice"
+version = "3.0.0"
+authors = ["LuNeder <luananeder@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
