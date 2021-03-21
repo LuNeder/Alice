@@ -11,8 +11,6 @@ Send the contnents of a file in a chat, each line on a message
 - Select the text box/input area you want Alice to type in
 - After 10 seconds, alice will start typing
 
-- Run alice with --help to see modes usage and info, including the loop mode
-
 #### Important notes
 Alice requires an original.txt file on the directory you're running it from.
 
