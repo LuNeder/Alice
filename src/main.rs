@@ -26,6 +26,7 @@
 use std::env;
 use text_io::scan;
 use std::fs;
+use std::str;
 
 fn main() {
     println!("Not ready yet. Use branch alice-python instead.");
@@ -47,7 +48,10 @@ fn main() {
         println!("{} seconds between lines", t);
 
         //
-
+        let file = "original.txt";
+        let open = fs::read_to_string(file);
+        let mut divided = open.lines();
+        println!("\n{:#?}", open);
 
         // Checks selected mode in command line and runs it
         if args.contains("loop") {alice_loop(t);} // Loop mode
