@@ -15,7 +15,7 @@ fn main() {
         scan!("{}", t);
         // Prints the t variable
         println!("{} seconds between lines", t);
-        alice_loop(); // Loop mode
+        alice_loop(t); // Loop mode
     } else {
         // Asks how many seconds between lines and save it as a t variable
         println!("How many seconds between lines?");
@@ -23,7 +23,7 @@ fn main() {
         scan!("{}", t);
         // Prints the t variable
         println!("{} seconds between lines", t);
-        alice(); // Regular mode
+        alice(t); // Regular mode
     };
 }
 
@@ -33,11 +33,11 @@ fn alice_help() {
 }
 
 // Loop mode
-fn alice_loop() {
-    println!("loop");
+fn alice_loop(t: i32) {
+    println!("loop ({} seconds between lines)", t);
 }
 
 //Regular mode
-fn alice() {
-    println!("alice");
+fn alice(t: i32) {
+    println!("alice ({} seconds between lines)", t);
 }
