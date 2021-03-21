@@ -1,5 +1,6 @@
 use std::env;
 use text_io::scan;
+use std::fs;
 
 fn main() {
     println!("Not ready yet. Use branch alice-python instead.");
@@ -8,14 +9,6 @@ fn main() {
     // Checks what mode was asked for in command line and runs it
     if args.contains("help") {
         alice_help(); // Help mode
-    } else if args.contains("loop") {
-        // Asks how many seconds between lines and save it as a t variable
-        println!("How many seconds between lines?");
-        let t: i32;
-        scan!("{}", t);
-        // Prints the t variable
-        println!("{} seconds between lines", t);
-        alice_loop(t); // Loop mode
     } else {
         // Asks how many seconds between lines and save it as a t variable
         println!("How many seconds between lines?");
@@ -23,7 +16,9 @@ fn main() {
         scan!("{}", t);
         // Prints the t variable
         println!("{} seconds between lines", t);
-        alice(t); // Regular mode
+        if args.contains("loop") {alice_loop(t);}
+        else {alice(t)};
+
     };
 }
 
