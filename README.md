@@ -13,6 +13,8 @@ Send the contnents of a file in a chat, each line on a message
 
 - Run alice with --help to see modes usage and info, including the loop mode
 
+- If you still need the Alice that is written in Python, check the [alice-python branch: https://github.com/LuNeder/Alice/tree/alice-python](https://github.com/LuNeder/Alice/tree/alice-python)
+
 #### Important notes
 Alice requires an original.txt file on the directory you're running it from.
 
