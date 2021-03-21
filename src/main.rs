@@ -9,8 +9,20 @@ fn main() {
     if args.contains("help") {
         alice_help(); // Help mode
     } else if args.contains("loop") {
+        // Asks how many seconds between lines and save it as a t variable
+        println!("How many seconds between lines?");
+        let t: i32;
+        scan!("{}", t);
+        // Prints the t variable
+        println!("{} seconds between lines", t);
         alice_loop(); // Loop mode
     } else {
+        // Asks how many seconds between lines and save it as a t variable
+        println!("How many seconds between lines?");
+        let t: i32;
+        scan!("{}", t);
+        // Prints the t variable
+        println!("{} seconds between lines", t);
         alice(); // Regular mode
     };
 }
