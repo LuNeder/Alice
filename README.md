@@ -3,7 +3,7 @@ Send the contnents of a file in a chat, each line on a message
 
 ### Usage
  
-- Download the file for your OS in Releases
+- Download the file for your OS in [Releases: https://github.com/LuNeder/Alice/releases](https://github.com/LuNeder/Alice/releases)
 - Open terminal and cd to the directory original.txt is (usually the same directory as alice is)
 - Type/paste whatever you want in original.txt
 - Run on terminal: "/PATH/TO/alice" (or PATH\TO\alice.xe on Windows) (change /PATH/TO/alice to the alice path. If you are already on alice's directory and alice and original.txt are in the same directory, you can just type ./alice or ./alice.exe instead)
