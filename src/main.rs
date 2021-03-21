@@ -47,16 +47,17 @@ fn main() {
         // Prints the t variable
         println!("{} seconds between lines", t);
 
-        //
+        // Open and divide original.txt by lines
         let file = "original.txt";
         let open = fs::read_to_string(file)
             .expect("Something went wrong reading the file");
-        let mut divided = open.lines();
-        println!("\n{:#?}", open);
+        let mut divided: Vec<&str> = open.lines().collect();
+
+
 
         // Checks selected mode in command line and runs it
-        if args.contains("loop") {alice_loop(t);} // Loop mode
-        else {alice(t)}; // Regular mode
+        if args.contains("loop") {alice_loop(t, divided);} // Loop mode
+        else {alice(t, divided)}; // Regular mode
 
     };
 }
@@ -67,11 +68,11 @@ fn alice_help() {
 }
 
 // Loop mode
-fn alice_loop(t: i32) {
+fn alice_loop(t: i32, divided: Vec<&str>) {
     println!("loop ({} seconds between lines)", t);
 }
 
 //Regular mode
-fn alice(t: i32) {
+fn alice(t: i32, divided: Vec<&str>) {
     println!("alice ({} seconds between lines)", t);
 }
