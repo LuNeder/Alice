@@ -49,7 +49,8 @@ fn main() {
 
         //
         let file = "original.txt";
-        let open = fs::read_to_string(file);
+        let open = fs::read_to_string(file)
+            .expect("Something went wrong reading the file");
         let mut divided = open.lines();
         println!("\n{:#?}", open);
 
