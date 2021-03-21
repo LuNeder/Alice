@@ -6,7 +6,7 @@ fn main() {
     println!("Not ready yet. Use branch alice-python instead.");
     // Get command line input and save it as an args variable
     let args: String = env::args().collect();
-    // Checks what mode was asked for in command line and runs it
+    // Checks if the mode selected in command line was help and runs it or not
     if args.contains("help") {
         alice_help(); // Help mode
     } else {
@@ -16,8 +16,9 @@ fn main() {
         scan!("{}", t);
         // Prints the t variable
         println!("{} seconds between lines", t);
-        if args.contains("loop") {alice_loop(t);}
-        else {alice(t)};
+        // Checks selected mode in command line and runs it
+        if args.contains("loop") {alice_loop(t);} // Loop mode
+        else {alice(t)}; // Regular mode
 
     };
 }
