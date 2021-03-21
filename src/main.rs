@@ -28,9 +28,8 @@ use text_io::scan;
 use std::fs;
 use std::str;
 use std::{thread, time};
-use inputbot::*;
-use std::{thread::sleep, time::Duration};
-
+use simulate;
+use simulate::Key;
 
 fn main() {
     println!("Not ready yet. Use branch alice-python instead.");
@@ -82,10 +81,10 @@ fn alice(t: i32, divided: Vec<&str>) {
     let tensec = time::Duration::from_secs(10);
     thread::sleep(tensec);
     for i in divided {
-        let onesec = time::Duration::from_secs(1);
-        KeySequence(i).send();
-        thread::sleep(onesec);
-
+        let halfsec = time::Duration::from_millis(500);
+        simulate::type_str(i).unwrap();
+        thread::sleep(halfsec);
+        simulate::send(Key::Enter).unwrap();
         let now = time::Instant::now();
         println!("{}", i);
     }
