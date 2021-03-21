@@ -2,7 +2,7 @@ use std::env;
 
 fn main() {
     println!("Not ready yet. Use branch alice-python instead.");
-    let args: Vec<String> = env::args().collect();
+    let args: String = env::args().collect();
     if args.contains("help") {
         alice_help();
     } else if args.contains("loop") {
