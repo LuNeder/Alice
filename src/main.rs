@@ -73,13 +73,23 @@ fn alice_help() {
 // Loop mode
 fn alice_loop(t: i32, divided: Vec<&str>) {
     println!("loop ({} seconds between lines)", t);
+    let tensec = time::Duration::from_secs(10);
+    thread::sleep(tensec);
+    loop {
+        let mut divided2 = divided.clone();
+        alice(t, divided2);
+    }
 }
 
 //Regular mode
 fn alice(t: i32, divided: Vec<&str>) {
-    println!("alice ({} seconds between lines)", t);
-    let tensec = time::Duration::from_secs(10);
-    thread::sleep(tensec);
+    let args: String = env::args().collect();
+    if args.contains("loop") {println!("LOOP")} else {
+        println!("alice ({} seconds between lines)", t);
+        let tensec = time::Duration::from_secs(10);
+        thread::sleep(tensec);
+    }
+    let tttt = t as u64;
     for i in divided {
         let halfsec = time::Duration::from_millis(500);
         simulate::type_str(i).unwrap();
@@ -87,5 +97,7 @@ fn alice(t: i32, divided: Vec<&str>) {
         simulate::send(Key::Enter).unwrap();
         let now = time::Instant::now();
         println!("{}", i);
+        let z = time::Duration::from_secs(tttt);
+        thread::sleep(z);
     }
 }
