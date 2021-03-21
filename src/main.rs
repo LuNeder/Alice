@@ -27,6 +27,10 @@ use std::env;
 use text_io::scan;
 use std::fs;
 use std::str;
+use std::{thread, time};
+use inputbot::*;
+use std::{thread::sleep, time::Duration};
+
 
 fn main() {
     println!("Not ready yet. Use branch alice-python instead.");
@@ -75,4 +79,14 @@ fn alice_loop(t: i32, divided: Vec<&str>) {
 //Regular mode
 fn alice(t: i32, divided: Vec<&str>) {
     println!("alice ({} seconds between lines)", t);
+    let tensec = time::Duration::from_secs(10);
+    thread::sleep(tensec);
+    for i in divided {
+        let onesec = time::Duration::from_secs(1);
+        KeySequence(i).send();
+        thread::sleep(onesec);
+
+        let now = time::Instant::now();
+        println!("{}", i);
+    }
 }
