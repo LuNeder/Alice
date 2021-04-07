@@ -1,7 +1,7 @@
 # Alice
 Send the contnents of a file in a chat, each line on a message
 
-### Usage
+# Usage
  
 - Download the file for your OS in [Releases: https://github.com/LuNeder/Alice/releases](https://github.com/LuNeder/Alice/releases)
 - Open terminal and cd to the directory original.txt is (usually the same directory as alice is)
@@ -15,7 +15,7 @@ Send the contnents of a file in a chat, each line on a message
 
 - If you still need the Alice that is written in Python, check the [alice-python branch: https://github.com/LuNeder/Alice/tree/alice-python](https://github.com/LuNeder/Alice/tree/alice-python)
 
-#### Important notes
+# Important notes
 Alice requires an original.txt file on the directory you're running it from.
 
 Alice will read the file and then type it (a line followed by an enter, then the next line).
@@ -26,4 +26,7 @@ You can also tell Alice to wait some time between a line and the other.
 
 The first line will be written 10 seconds after you run Alice and tell the time between a line and the other, this way you have time to select the place where you want to input your text.
 
+# The name
 "Alice" was just the 1st name I found on Google lol
+
+Alice uses she/they pronouns
